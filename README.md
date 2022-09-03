@@ -5,7 +5,7 @@ The original WCF port to .NET 6 lacks the Pipes support, so this library is inte
 
 * Use on your own risk. Not of a production quality.
 
-* Pipes IPC only (oln the same machine)
+* Pipes IPC only (on the same machine)
 
 * Tested on Windows 10/11 and Ubuntu 20.04 with .NET 6 framework installed.
 
