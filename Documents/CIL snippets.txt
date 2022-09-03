@@ -1,0 +1,29 @@
+ldarg.1  					Ldarg_1				Loads the argument at index 1 onto the evaluation stack.
+ldc.i4 <immediate>			Ldc_I4				Pushes a supplied value of type int32 onto the evaluation stack as an int32.
+conv.i8						Conv_I8				Converts the value on top of the evaluation stack to int64.
+stind.i8					Stind_I8			Stores a value of type int64 at a supplied address.
+
+
+ldarg.1						Ldarg_1				Loads the argument at index 1 onto the evaluation stack.
+ldstr <string>				Ldstr				Pushes a new object reference to a string literal stored in the metadata.
+stind.ref					Stind_Ref			Stores a object reference value at a supplied address.
+
+
+
+pop							Pop					Removes the value currently on top of the evaluation stack.
+ldloc.0						Ldloc_0 			Loads the local variable at index 0 onto the evaluation stack.
+stloc.0						Stloc_0				Pops the current value from the top of the evaluation stack and stores it in the local variable list at index 0.
+ldelem.ref					Ldelem_Ref			Loads the element containing an object reference at a specified array index onto the top of the evaluation stack as type O (object reference).
+castclass <type>			Castclass 			Attempts to cast an object passed by reference to the specified class.
+unbox.any <type>			Unbox_Any			Converts the boxed representation of a type specified in the instruction to its unboxed form.
+
+ldind.u2					Ldind_U2			Loads a value of type unsigned int16 as an int32 onto the evaluation stack indirectly.
+					
+
+stind.xxx works this way:
+    An address is pushed onto the stack.
+    A value is pushed onto the stack.
+    The value and the address are popped from the stack; the value is stored at the address.
+
+
+

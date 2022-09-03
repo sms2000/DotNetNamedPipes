@@ -1,0 +1,10 @@
+DataExchangeNET6/bin/
+DataExchangeNET6/obj/
+TestClient/bin/
+TestClient/obj/
+TestServer/bin/
+TestServer/obj/
+ClientServer/obj/
+ClientServer/bin/
+.vs/
+.vscode/

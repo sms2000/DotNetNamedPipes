@@ -1,0 +1,352 @@
+// Method 4
+
+  .method public final hidebysig virtual newslot instance class [System.Collections]System.Collections.Generic.List`1<string>
+    Method4(
+      class [System.Collections]System.Collections.Generic.HashSet`1<string>& hashSet1,
+      [out] class [System.Collections]System.Collections.Generic.HashSet`1<string>& hashSet2,
+      string str1,
+      char char1,
+      bool bool1,
+      int32 int1,
+      class [System.Collections]System.Collections.Generic.Dictionary`2<int32, string>& dict1,
+      [out] class [System.Collections]System.Collections.Generic.Dictionary`2<int32, string>& dict2,
+      int64 long1,
+      [out] int64& long2
+    ) cil managed
+  {
+    .maxstack 4
+    .locals init (
+      [0] object[] pp
+    )
+
+    // [63 13 - 63 33]
+    IL_0000: ldarg.2      // hashSet2 = 2
+    IL_0001: ldnull
+    IL_0002: stind.ref
+
+    // [64 13 - 64 30]
+    IL_0003: ldarg.s      dict2 = 8
+    IL_0005: ldnull
+    IL_0006: stind.ref
+
+    // [65 13 - 65 23]
+    IL_0007: ldarg.s      long2 = 10
+    IL_0009: ldc.i4.0
+    IL_000a: conv.i8
+    IL_000b: stind.i8
+
+    // [67 13 - 67 41]
+    IL_000c: ldc.i4.s     12 // 0x0c
+    IL_000e: newarr       [System.Runtime]System.Object
+    IL_0013: stloc.0      // pp
+
+    // [68 13 - 68 26]
+    IL_0014: ldloc.0      // pp
+    IL_0015: ldc.i4.0
+    IL_0016: ldarg.0      // this
+    IL_0017: stelem.ref
+
+    // [69 13 - 69 63]
+    IL_0018: ldloc.0      // pp
+    IL_0019: ldc.i4.1
+    IL_001a: ldstr        "Method4"
+    IL_001f: call         string [DataExchangeNET6]DataExchangeNET6.Exchange.TransferRecord::BuildSerialized(string)
+    IL_0024: stelem.ref
+
+    // [70 13 - 70 30]
+    IL_0025: ldloc.0      // pp
+    IL_0026: ldc.i4.2
+    IL_0027: ldarg.1      // hashSet1
+    IL_0028: ldind.ref
+    IL_0029: stelem.ref
+
+    // [71 13 - 71 30]
+    IL_002a: ldloc.0      // pp
+    IL_002b: ldc.i4.3
+    IL_002c: ldarg.2      // hashSet2
+    IL_002d: ldind.ref
+    IL_002e: stelem.ref
+
+    // [72 13 - 72 26]
+    IL_002f: ldloc.0      // pp
+    IL_0030: ldc.i4.4
+    IL_0031: ldarg.3      // str1
+    IL_0032: stelem.ref
+
+    // [73 13 - 73 27]
+    IL_0033: ldloc.0      // pp
+    IL_0034: ldc.i4.5
+    IL_0035: ldarg.s      char1 = 4
+    IL_0037: box          [System.Runtime]System.Char
+    IL_003c: stelem.ref
+
+    // [74 13 - 74 27]
+    IL_003d: ldloc.0      // pp
+    IL_003e: ldc.i4.6
+    IL_003f: ldarg.s      bool1 = 5
+    IL_0041: box          [System.Runtime]System.Boolean
+    IL_0046: stelem.ref
+
+    // [75 13 - 75 26]
+    IL_0047: ldloc.0      // pp
+    IL_0048: ldc.i4.7
+    IL_0049: ldarg.s      int1 = 6
+    IL_004b: box          [System.Runtime]System.Int32
+    IL_0050: stelem.ref
+
+    // [76 13 - 76 27]
+    IL_0051: ldloc.0      // pp
+    IL_0052: ldc.i4.8
+    IL_0053: ldarg.s      dict1 = 7
+    IL_0055: ldind.ref
+    IL_0056: stelem.ref
+
+    // [77 13 - 77 27]
+    IL_0057: ldloc.0      // pp
+    IL_0058: ldc.i4.s     9 // 0x09
+    IL_005a: ldarg.s      dict2 = 8
+    IL_005c: ldind.ref
+    IL_005d: stelem.ref
+
+    // [78 13 - 78 28]
+    IL_005e: ldloc.0      // pp
+    IL_005f: ldc.i4.s     10 // 0x0a
+    IL_0061: ldarg.s      long1 = 9
+    IL_0063: box          [System.Runtime]System.Int64
+    IL_0068: stelem.ref
+
+    // [79 13 - 79 28]
+    IL_0069: ldloc.0      // pp
+    IL_006a: ldc.i4.s     11 // 0x0b
+    IL_006c: ldarg.s      long2 = 10
+    IL_006e: ldind.i8
+    IL_006f: box          [System.Runtime]System.Int64
+    IL_0074: stelem.ref
+
+    // [81 13 - 81 83]
+    IL_0075: ldloc.0      // pp
+    IL_0076: call         object [DataExchangeNET6]DataExchangeNET6.Exchange.ProxyStatics::ProxyDelegateObject(object[])
+    IL_007b: isinst       class [System.Collections]System.Collections.Generic.List`1<string>
+
+=================================================================
+
+    IL_0080: ldarg.2      // hashSet2 = 2
+    IL_0081: ldloc.0      // pp
+    IL_0082: ldc.i4.3
+    IL_0083: ldelem.ref
+    IL_0084: castclass    class [System.Collections]System.Collections.Generic.HashSet`1<string>
+    IL_0089: stind.ref
+
+    IL_008a: ldarg.s      dict2 = 8
+    IL_008c: ldloc.0      // pp
+    IL_008d: ldc.i4.s     9 // 0x09
+    IL_008f: ldelem.ref
+    IL_0090: castclass    class [System.Collections]System.Collections.Generic.Dictionary`2<int32, string>
+    IL_0095: stind.ref
+
+    IL_0096: ldarg.s      long2 = 10
+    IL_0098: ldloc.0      // pp
+    IL_0099: ldc.i4.s     11 // 0x0b
+    IL_009b: ldelem.ref
+    IL_009c: unbox.any    [System.Runtime]System.Int64
+    IL_00a1: stind.i8
+
+=================================================================
+
+    // [87 13 - 87 27]
+    IL_00a2: ret
+
+  } // end of method MethodImplementor::Method4
+
+// Method 5
+
+.method public hidebysig instance void
+    Method5(
+      [out] char& char1,
+      [out] int16& short1,
+      [out] int32& int1,
+      [out] int64& long1,
+      [out] float32& float1,
+      [out] float64& double1,
+      [out] class [System.Collections]System.Collections.Generic.HashSet`1<string>& hashSet1
+    ) cil managed
+  {
+    .maxstack 3
+    .locals init (
+      [0] object[] pp
+    )
+
+    // [92 13 - 92 29]
+    IL_0000: ldarg.1      // char1
+    IL_0001: ldc.i4.0
+    IL_0002: stind.i2
+
+    // [93 13 - 93 24]
+    IL_0003: ldarg.2      // short1
+    IL_0004: ldc.i4.0
+    IL_0005: stind.i2
+
+    // [94 13 - 94 22]
+    IL_0006: ldarg.3      // int1
+    IL_0007: ldc.i4.0
+    IL_0008: stind.i4
+
+    // [95 13 - 95 23]
+    IL_0009: ldarg.s      long1
+    IL_000b: ldc.i4.0
+    IL_000c: conv.i8
+    IL_000d: stind.i8
+
+    // [96 13 - 96 27]
+    IL_000e: ldarg.s      float1
+    IL_0010: ldc.r4       0.0
+    IL_0015: stind.r4
+
+    // [97 13 - 97 28]
+    IL_0016: ldarg.s      double1
+    IL_0018: ldc.r8       0.0
+    IL_0021: stind.r8
+
+    // [98 13 - 98 32]
+    IL_0022: ldarg.s      hashSet1
+    IL_0024: ldnull
+    IL_0025: stind.ref
+
+    // [100 13 - 100 40]
+    IL_0026: ldc.i4.s     9 // 0x09
+    IL_0028: newarr       [System.Runtime]System.Object
+    IL_002d: stloc.0      // pp
+
+    // [101 13 - 101 26]
+    IL_002e: ldloc.0      // pp
+    IL_002f: ldc.i4.0
+    IL_0030: ldarg.0      // this
+    IL_0031: stelem.ref
+
+    // [102 13 - 102 63]
+    IL_0032: ldloc.0      // pp
+    IL_0033: ldc.i4.1
+    IL_0034: ldstr        "Method5"
+    IL_0039: call         string [DataExchangeNET6]DataExchangeNET6.Exchange.TransferRecord::BuildSerialized(string)
+    IL_003e: stelem.ref
+
+    // [103 13 - 103 27]
+    IL_003f: ldloc.0      // pp
+    IL_0040: ldc.i4.2
+    IL_0041: ldarg.1      // char1
+    IL_0042: ldind.u2
+    IL_0043: box          [System.Runtime]System.Char
+    IL_0048: stelem.ref
+
+    // [104 13 - 104 28]
+    IL_0049: ldloc.0      // pp
+    IL_004a: ldc.i4.3
+    IL_004b: ldarg.2      // short1
+    IL_004c: ldind.i2
+    IL_004d: box          [System.Runtime]System.Int16
+    IL_0052: stelem.ref
+
+    // [105 13 - 105 26]
+    IL_0053: ldloc.0      // pp
+    IL_0054: ldc.i4.4
+    IL_0055: ldarg.3      // int1
+    IL_0056: ldind.i4
+    IL_0057: box          [System.Runtime]System.Int32
+    IL_005c: stelem.ref
+
+    // [106 13 - 106 27]
+    IL_005d: ldloc.0      // pp
+    IL_005e: ldc.i4.5
+    IL_005f: ldarg.s      long1
+    IL_0061: ldind.i8
+    IL_0062: box          [System.Runtime]System.Int64
+    IL_0067: stelem.ref
+
+    // [107 13 - 107 28]
+    IL_0068: ldloc.0      // pp
+    IL_0069: ldc.i4.6
+    IL_006a: ldarg.s      float1
+    IL_006c: ldind.r4
+    IL_006d: box          [System.Runtime]System.Single
+    IL_0072: stelem.ref
+
+    // [108 13 - 108 29]
+    IL_0073: ldloc.0      // pp
+    IL_0074: ldc.i4.7
+    IL_0075: ldarg.s      double1
+    IL_0077: ldind.r8
+    IL_0078: box          [System.Runtime]System.Double
+    IL_007d: stelem.ref
+
+    // [109 13 - 109 30]
+    IL_007e: ldloc.0      // pp
+    IL_007f: ldc.i4.8
+    IL_0080: ldarg.s      hashSet1
+    IL_0082: ldind.ref
+    IL_0083: stelem.ref
+
+    // [111 13 - 111 50]
+    IL_0084: ldloc.0      // pp
+    IL_0085: call         object [DataExchangeNET6]DataExchangeNET6.Exchange.ProxyStatics::ProxyDelegateObject(object[])
+    IL_008a: pop
+
+    // [113 13 - 113 33]
+    IL_008b: ldarg.1      // char1
+    IL_008c: ldloc.0      // pp
+    IL_008d: ldc.i4.2
+    IL_008e: ldelem.ref
+    IL_008f: unbox.any    [System.Runtime]System.Char
+    IL_0094: stind.i2
+
+    // [114 13 - 114 35]
+    IL_0095: ldarg.2      // short1
+    IL_0096: ldloc.0      // pp
+    IL_0097: ldc.i4.3
+    IL_0098: ldelem.ref
+    IL_0099: unbox.any    [System.Runtime]System.Int16
+    IL_009e: stind.i2
+
+    // [115 13 - 115 31]
+    IL_009f: ldarg.3      // int1
+    IL_00a0: ldloc.0      // pp
+    IL_00a1: ldc.i4.4
+    IL_00a2: ldelem.ref
+    IL_00a3: unbox.any    [System.Runtime]System.Int32
+    IL_00a8: stind.i4
+
+    // [116 13 - 116 33]
+    IL_00a9: ldarg.s      long1
+    IL_00ab: ldloc.0      // pp
+    IL_00ac: ldc.i4.5
+    IL_00ad: ldelem.ref
+    IL_00ae: unbox.any    [System.Runtime]System.Int64
+    IL_00b3: stind.i8
+
+    // [117 13 - 117 35]
+    IL_00b4: ldarg.s      float1
+    IL_00b6: ldloc.0      // pp
+    IL_00b7: ldc.i4.6
+    IL_00b8: ldelem.ref
+    IL_00b9: unbox.any    [System.Runtime]System.Single
+    IL_00be: stind.r4
+
+    // [118 13 - 118 37]
+    IL_00bf: ldarg.s      double1
+    IL_00c1: ldloc.0      // pp
+    IL_00c2: ldc.i4.7
+    IL_00c3: ldelem.ref
+    IL_00c4: unbox.any    [System.Runtime]System.Double
+    IL_00c9: stind.r8
+
+    // [119 13 - 119 47]
+    IL_00ca: ldarg.s      hashSet1
+    IL_00cc: ldloc.0      // pp
+    IL_00cd: ldc.i4.8
+    IL_00ce: ldelem.ref
+    IL_00cf: castclass    class [System.Collections]System.Collections.Generic.HashSet`1<string>
+    IL_00d4: stind.ref
+
+    // [120 9 - 120 10]
+    IL_00d5: ret
+
+  } // end of method MethodImplementor::Method5
