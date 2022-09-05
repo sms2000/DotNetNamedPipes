@@ -1,4 +1,4 @@
-The DotNetNamedPipes library and test applications is a Proff of Concept. Intended to be used instead of .NET Frameworks WCF (C) Microsoft when running with .NET 6.
+The DotNetNamedPipes library and test applications is a Proof of Concept. Intended to be used instead of .NET Frameworks WCF (C) Microsoft when running with .NET 6.
 The original WCF port to .NET 6 lacks the Pipes support, so this library is intended to close the gap.
 
 * Free for all
