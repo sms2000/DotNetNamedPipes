@@ -432,7 +432,7 @@ namespace DataExchangeNET6.Exchange
 
             for (var i = 0; i < paramInfo.Length; i++)
             {
-                if (!paramInfo[i].IsOut)
+                if (!paramInfo[i].IsOut && !paramInfo[i].ParameterType.IsByRef)
                 {
                     continue;
                 }
