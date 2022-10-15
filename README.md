@@ -9,5 +9,5 @@ The original WCF port to .NET 6 lacks the Pipes support, so this library is inte
 
 * Tested on Windows 10/11 and Ubuntu 20.04 with .NET 6 framework installed.
 
-* No documentation provided yet.
-
+* No documentation provided yet. 
+  Use TestServer and TestClient and your imagination.
